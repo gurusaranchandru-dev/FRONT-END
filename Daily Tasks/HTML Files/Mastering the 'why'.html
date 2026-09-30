@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Positioning Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding-top: 70px; /* space so the fixed header does not cover the content */
+    }
+
+    /* FIXED: stays at the top of the browser window */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* RELATIVE: the parent that the badge measures from */
+    .container {
+      position: relative;
+      width: 300px;
+      margin: 50px auto;
+      background-color: white;
+      border: 2px solid #2c3e50;
+      padding: 30px 20px;
+    }
+
+    .container h3 {
+      margin: 0;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* ABSOLUTE: round badge on the top-right corner of the container */
+    .badge {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      background-color: #f91111;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .spacer {
+      height: 1000px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Fixed Header</div>
+
+  <div class="container">
+    <span class="badge">FSD</span>
+    <h3>Relative Container</h3>
+  </div>
+
+  <div class="spacer"></div>
+
+</body>
+</html>

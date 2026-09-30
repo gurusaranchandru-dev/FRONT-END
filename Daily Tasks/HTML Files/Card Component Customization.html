@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card Component</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            margin: 0;
+        }
+
+        /* Outer Card Container (Block Element) */
+        .profile-card {
+            display: block;
+            width: 280px;
+            background-color: #707070; /* Gray background */
+            border: 3px solid #4a4a4a;
+            border-radius: 18px; /* Curved edges */
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Profile Image (Block Element centered) */
+        .profile-img {
+            display: block;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%; /* Curved circle */
+            border: 3px solid #ff4d4d; /* Red border accent */
+            margin: 0 auto 15px auto;
+            object-fit: cover;
+            background-color: #999;
+        }
+
+        /* Name Heading (Block Element) */
+        .profile-name {
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 10px 0 15px 0;
+        }
+
+        /* Status Indicator (Inline-Block Element) */
+        .status-badge {
+            display: inline-block;
+            background-color: #ff4d4d; /* Red background */
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 20px; /* Curved edges */
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Profile Picture Tag -->
+        <img class="profile-img" src="c:\Users\dell\OneDrive\Desktop\Profile Pic for Program.avif" alt="Chandru Profile Picture" onerror="this.src='https://placehold.co/110x110/ff4d4d/ffffff?text=Chandru'">
+        
+        <!-- User Name -->
+        <span class="profile-name">Chandru</span>
+        
+        <!-- Status Indicator Badge -->
+        <span class="status-badge">● Active Now</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Login Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px 20px;
+    }
+
+    .login-box {
+      width: 320px;
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 25px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .field {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      color: #333;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    /* Visible outline when the field is selected (helps keyboard users) */
+    input:focus {
+      outline: none;
+      border-color: #2c3e50;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h1>Login</h1>
+
+    <form>
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
